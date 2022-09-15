@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="heading">Cash Register Manager</nav>
+    <div class="container">
+      <p class="description">
+        Enter the bill amount and cash given by the customer and know minimum
+        number of notes to return.
+      </p>
+      <label class="input-label" for="bill-amount">Bill Amount:</label>
+      <input
+        class="input"
+        placeholder="Enter a numeral value"
+        id="bill-amount"
+        type="number"
+      />
+      <button class="btn" id="next-button">Next</button>
+
+      <div class="cashAll">
+        <label class="input-label" for="cash-given">Cash Given:</label>
+        <input
+          class="input"
+          placeholder="Enter a numeral value"
+          id="cash-given"
+          type="number"
+        />
+
+        <button class="btn" id="check-button">Check</button>
+      </div>
+
+      <p id="error-message"></p>
+
+      <table class="change-table">
+        <caption class="tb-caption">
+          Return Change
+        </caption>
+        <tr>
+          <th class="tab-head">No. of notes</th>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+        </tr>
+
+        <tr>
+          <th class="tab-head">Note</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <div>
+        <div class="footer-name">Social media Links</div>
+        <a
+          class="footer-links"
+          href="https://github.com/prachi-sahu-codes"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+
+        <a class="footer-links" href="https://twitter.com/sahuprachi637">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a
+          class="footer-links"
+          href="https://www.linkedin.com/in/prachi-sahu-96b228200/"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a class="footer-links" href="mailto:prachisahu998@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

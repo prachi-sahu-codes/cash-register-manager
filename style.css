@@ -1,0 +1,130 @@
+:root {
+  --primary: blueviolet;
+  --secondary: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 75vw;
+}
+
+.heading {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.description {
+  margin: 2rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.input-label {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.input {
+  font-size: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  width: 20rem;
+  margin: 1rem auto;
+}
+
+.cashAll {
+  flex-direction: column;
+}
+
+.btn {
+  font-size: 1.2rem;
+  width: 6rem;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 5rem;
+  background-color: var(--primary);
+  color: var(--secondary);
+  margin: 1rem auto;
+}
+
+#error-message {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.change-table,
+td,
+th {
+  border: 3px solid var(--primary);
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+}
+th {
+  font-weight: 600;
+}
+.no-of-notes {
+  width: 5rem;
+}
+
+.tb-caption {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+footer {
+  width: 100%;
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: var(--primary);
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+}
+
+.footer-links {
+  display: inline-block;
+  color: #fff;
+  padding: 0 1rem 0;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer-links:hover {
+  transform: scale(1.05);
+}
+
+.footer-name {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  font-weight: 500;
+}
