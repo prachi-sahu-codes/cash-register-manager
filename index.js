@@ -30,7 +30,7 @@ checkAmount.addEventListener("click", function validateBillCash() {
       const amountToBeReturned = cashGvn - billAmt;
       calculateChange(amountToBeReturned);
     } else {
-      showMessage("Do you wanna wash plates? 🍽️");
+      showMessage("Do you wanna pay or wash plates? 🍽️");
     }
   } else {
     showMessage("Invalid Bill Amount");
