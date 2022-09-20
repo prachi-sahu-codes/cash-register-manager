@@ -1,6 +1,7 @@
 :root {
   --primary: #006d77;
   --secondary: #fff;
+  --bisque: #ffe4c4;
 }
 
 * {
@@ -16,6 +17,7 @@
   flex-direction: column;
   margin: auto;
   width: 75vw;
+  background-color: var(--bisque);
 }
 
 .heading {
@@ -70,10 +72,18 @@
 td,
 th {
   border: 3px solid var(--primary);
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   font-size: 1.2rem;
   padding: 0.6rem;
+  background-color: var(--secondary);
+  border-radius: 0.3rem;
 }
+
+.change-table {
+  border: none;
+  background-color: var(--bisque);
+}
+
 th {
   font-weight: 600;
 }
@@ -102,18 +112,18 @@ html {
 
 footer {
   width: 100%;
-  margin-top: 3rem;
+
   font-size: 2rem;
   font-weight: 300;
   background-color: var(--primary);
   padding: 0.5rem;
   text-align: center;
-  color: white;
+  color: var(--secondary);
 }
 
 .footer-links {
   display: inline-block;
-  color: #fff;
+  color: var(--secondary);
   padding: 0 1rem 0;
   text-decoration: none;
   font-size: 2rem;
@@ -127,4 +137,8 @@ footer {
   font-size: 1.2rem;
   padding: 0.5rem;
   font-weight: 500;
+}
+
+table {
+  margin-bottom: 3rem;
 }
