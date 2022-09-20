@@ -21,9 +21,13 @@ next.addEventListener("click", function showBox() {
 
 checkAmount.addEventListener("click", function validateBillCash() {
   hideMessage();
-  if (billAmount.value > 0) {
-    if (cashGiven.value >= billAmount.value) {
-      const amountToBeReturned = cashGiven.value - billAmount.value;
+
+  let billAmt = Number(billAmount.value);
+  let cashGvn = Number(cashGiven.value);
+
+  if (billAmt > 0) {
+    if (cashGvn >= billAmt) {
+      const amountToBeReturned = cashGvn - billAmt;
       calculateChange(amountToBeReturned);
     } else {
       showMessage("Do you wanna wash plates? 🍽️");
@@ -42,7 +46,8 @@ function calculateChange(amountToBeReturned) {
 }
 
 function hideMessage() {
-  message.style.display = "none";
+  noOfNotes.forEach((ele) => (ele.innerText = ""));
+  message.innerText = "";
 }
 
 function showMessage(msg) {
